@@ -1,0 +1,468 @@
+/* ==================== TABLET & MOBILE ==================== */
+
+@media (max-width: 1024px) {
+    .hero-title {
+        font-size: 3rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .section-header h2 {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+    }
+
+    .about-image {
+        order: -1;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .services-grid {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-info {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .hero-stats {
+        flex-direction: column;
+        gap: 2rem;
+        bottom: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Navigation */
+    .menu-toggle {
+        display: flex;
+    }
+
+    .nav-menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(26, 26, 46, 0.98);
+        gap: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        border-top: 2px solid var(--gold-color);
+    }
+
+    .nav-menu.active {
+        max-height: 400px;
+    }
+
+    .nav-menu li {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .nav-menu li a {
+        display: block;
+        padding: 1rem 1.5rem;
+    }
+
+    .nav-menu a::after {
+        display: none;
+    }
+
+    /* Hero */
+    .hero {
+        margin-top: 70px;
+        height: 70vh;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .hero-stats {
+        flex-direction: row;
+        gap: 1rem;
+        bottom: 20px;
+        justify-content: space-around;
+        padding: 0 10px;
+        font-size: 0.9rem;
+    }
+
+    .stat-number {
+        font-size: 1.8rem;
+    }
+
+    .stat-label {
+        font-size: 0.75rem;
+    }
+
+    /* Sections */
+    .about,
+    .services,
+    .portfolio,
+    .contact {
+        padding: 3rem 0;
+    }
+
+    .section-header h2 {
+        font-size: 2rem;
+    }
+
+    .section-header {
+        margin-bottom: 2rem;
+    }
+
+    /* About */
+    .about-text h3 {
+        font-size: 1.5rem;
+    }
+
+    .about-features {
+        grid-template-columns: 1fr;
+    }
+
+    .feature-item {
+        padding: 1.2rem;
+    }
+
+    /* Services */
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .service-card {
+        padding: 1.5rem;
+    }
+
+    .service-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.3rem;
+    }
+
+    /* Portfolio */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .portfolio-item {
+        height: 300px;
+    }
+
+    .portfolio-filters {
+        gap: 0.5rem;
+    }
+
+    .filter-btn {
+        padding: 8px 16px;
+        font-size: 0.8rem;
+    }
+
+    /* Contact */
+    .contact-info {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .info-card {
+        padding: 1.5rem;
+    }
+
+    .contact-form {
+        gap: 1rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 12px;
+        font-size: 16px; /* Prevents zoom on mobile */
+    }
+
+    /* Footer */
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px;
+    }
+
+    .navbar {
+        padding: 0.8rem 0;
+    }
+
+    .logo-img {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+
+    .company-name {
+        font-size: 1rem;
+        letter-spacing: 1px;
+    }
+
+    .company-subtitle {
+        font-size: 0.65rem;
+    }
+
+    .hero {
+        height: 60vh;
+        margin-top: 65px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-buttons {
+        gap: 0.8rem;
+    }
+
+    .btn {
+        padding: 12px 30px;
+        font-size: 0.85rem;
+    }
+
+    .hero-stats {
+        bottom: 10px;
+        padding: 0 5px;
+    }
+
+    .stat-number {
+        font-size: 1.3rem;
+    }
+
+    .stat-label {
+        font-size: 0.65rem;
+    }
+
+    .stat-item {
+        flex: 1;
+    }
+
+    /* Sections */
+    .about,
+    .services,
+    .portfolio,
+    .contact {
+        padding: 2rem 0;
+    }
+
+    .section-header h2 {
+        font-size: 1.5rem;
+    }
+
+    .section-header h2::before {
+        width: 60px;
+    }
+
+    .section-header p {
+        font-size: 0.95rem;
+        margin-top: 1rem;
+    }
+
+    .section-header {
+        margin-bottom: 1.5rem;
+    }
+
+    /* About */
+    .about-text h3 {
+        font-size: 1.2rem;
+        margin-bottom: 1rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+        margin-bottom: 1rem;
+    }
+
+    .feature-item {
+        padding: 1rem;
+    }
+
+    .feature-item i {
+        font-size: 1.5rem;
+    }
+
+    .feature-item h4 {
+        font-size: 0.95rem;
+    }
+
+    .feature-item p {
+        font-size: 0.8rem;
+    }
+
+    /* Services */
+    .service-card {
+        padding: 1.2rem;
+    }
+
+    .service-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.3rem;
+    }
+
+    .service-card h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .service-card p {
+        font-size: 0.9rem;
+    }
+
+    .service-features li {
+        font-size: 0.85rem;
+    }
+
+    /* Portfolio */
+    .portfolio-item {
+        height: 250px;
+    }
+
+    .portfolio-overlay h3 {
+        font-size: 1.3rem;
+    }
+
+    .portfolio-overlay p {
+        font-size: 0.8rem;
+    }
+
+    .filter-btn {
+        padding: 6px 12px;
+        font-size: 0.7rem;
+    }
+
+    /* Contact */
+    .contact-info {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 1.2rem;
+    }
+
+    .info-card i {
+        font-size: 1.8rem;
+    }
+
+    .info-card h4 {
+        font-size: 0.95rem;
+    }
+
+    .info-card p {
+        font-size: 0.85rem;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        padding: 10px;
+        font-size: 16px;
+    }
+
+    /* Footer */
+    .footer {
+        padding: 2rem 0 0.5rem;
+    }
+
+    .footer-content {
+        gap: 1rem;
+    }
+
+    .footer-section h4 {
+        font-size: 0.95rem;
+        margin-bottom: 0.8rem;
+    }
+
+    .footer-section p,
+    .footer-section ul li {
+        font-size: 0.85rem;
+    }
+
+    .social-links a {
+        width: 40px;
+        height: 40px;
+        font-size: 0.9rem;
+    }
+
+    .footer-bottom {
+        padding-top: 1.5rem;
+        font-size: 0.8rem;
+    }
+}
+
+/* Landscape mode adjustments */
+@media (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+    }
+
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .hero-stats {
+        bottom: 20px;
+    }
+}
+
+/* High DPI screens */
+@media (-webkit-min-device-pixel-ratio: 2),
+       (min-resolution: 192dpi) {
+    /* Slightly thinner borders and sharper text */
+    body {
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+}
